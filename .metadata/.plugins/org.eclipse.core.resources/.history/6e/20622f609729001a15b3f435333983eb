@@ -1,0 +1,82 @@
+package com.testProgrammes;
+
+import java.util.HashMap;
+
+public class HashMapProject {
+	
+	public static void main(String[] args) {
+		
+		HashMap<Emp, Integer> map=new HashMap<>();
+		
+		Emp e1=new Emp();
+		
+		e1.setId(12);
+		e1.setName("Anshu");
+		
+		Emp e2=new Emp();
+		e2.setId(12);
+		e2.setName("Anshu");
+		
+		Emp e3=new Emp();
+		e3.setId(12);
+		e3.setName("Anshu");
+		
+		Emp e4=new Emp();
+		e4.setId(12);
+		e4.setName("Anshu");
+		
+	 
+		
+		System.out.println(map.hashCode());
+		
+	}
+
+}
+
+class Emp
+{
+	int id;
+	
+	String name;
+	
+	 
+
+	 
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public boolean equals(Object arg0) {
+		// TODO Auto-generated method stub
+		return super.equals(arg0);
+	}
+
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return super.hashCode();
+	}
+
+	@Override
+	public String toString() {
+		return "Emp [id=" + id + ", name=" + name + "]";
+	}
+	
+	
+	
+	
+}

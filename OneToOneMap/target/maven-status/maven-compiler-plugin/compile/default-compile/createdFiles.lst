@@ -1,0 +1,6 @@
+com\onetoonemapping\model\User.class
+com\onetoonemapping\model\Gender.class
+com\onetoonemapping\model\UserProfile.class
+com\onetoonemapping\repository\JpaOneToOneDemoApplication.class
+com\onetoonemapping\repository\UserProfileRepository.class
+com\onetoonemapping\repository\UserRepository.class

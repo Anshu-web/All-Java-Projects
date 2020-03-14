@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;StoreProcedure&apos; to &apos;SpringBootStoreProcedureApplication&apos;" description="Rename resource &apos;StoreProcedure&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/StoreProcedure" name="SpringBootStoreProcedureApplication" stamp="1575569723176" updateReferences="true"/>
+</session>

@@ -1,0 +1,30 @@
+package com.string;
+
+public class Dublicates3 {
+    private static Scanner scn;
+
+    public static void countwords(String sent) {
+        sent = sent.toLowerCase().replaceAll("[^a-z ]", "");
+        ArrayList<String> arr = new ArrayList<String>();
+        String[] sentarr = sent.split(" ");
+        Map<String, Integer> a = new HashMap<String, Integer>();
+        for (String word : sentarr) {
+            arr.add(word);
+        }
+        for (String word : arr) {
+            int count = Collections.frequency(arr, word);
+            a.put(word, count);
+        }
+        for (String key : a.keySet()) {
+            System.out.println(key + " = " + a.get(key));
+        }
+    }
+
+    public static void main(String[] args) {
+        scn = new Scanner(System.in);
+        System.out.println("Enter sentence:");
+        String inp = scn.nextLine();
+        countwords(inp);
+    }
+
+}

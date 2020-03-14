@@ -1,0 +1,7 @@
+com\onetomany\api\model\Customer.class
+com\onetomany\api\controller\OrderController.class
+com\onetomany\api\dto\OrderRequest.class
+com\onetomany\api\model\Product.class
+com\onetomany\api\MainApp.class
+com\onetomany\api\repository\ProductRepository.class
+com\onetomany\api\repository\CustomerRepository.class

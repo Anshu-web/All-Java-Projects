@@ -1,0 +1,41 @@
+package com.testProgrammes;
+
+import java.util.Collection;
+import java.util.Map;
+import java.util.Queue;
+
+public class Test11 {
+
+	public void hi() {
+		System.out.println("Hiii....");
+	}
+}
+
+class Test11 {
+	public static void main(String[] args) {
+
+		/*
+		 * int i=1; int j=10; do {
+		 * 
+		 * if(i++>--j) { continue; }
+		 * 
+		 * }while(i<5);
+		 * 
+		 * System.out.println(i+" "+j);
+		 */
+
+		Test11 t = new B();
+		t.hi();
+		t.hi();
+
+	}
+}
+
+class B extends Test11
+{
+	public void hello()
+	{
+		System.out.println("Hello");
+	}
+}
+

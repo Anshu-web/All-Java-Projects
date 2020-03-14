@@ -1,0 +1,32 @@
+package com.java8;
+
+import java.util.Optional;
+
+public class OptionalClass {
+	
+	public static void main(String[] args) {
+		
+		
+		Optional<String> opt=Optional.empty();
+		
+		//System.out.println(opt);
+		
+		String book="anshu";
+		
+		if(book!=null)
+		{
+			System.out.println(book.toUpperCase());
+		}
+		
+		
+		opt=Optional.of(book);
+		
+		if(opt.isPresent())
+		{
+			System.out.println(opt.get().toUpperCase());
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,79 @@
+package com.testProgrammes;
+
+import java.util.Collection;
+import java.util.Map;
+import java.util.Queue;
+
+public class Test11 {
+	
+	public static void main(String[] args) {
+		
+		try {
+			throw 10;
+		} catch ( e) {
+			// TODO: handle exception
+		}
+
+	B t = new B();
+	t.hi();
+	 
+	}
+}
+
+abstract class A
+{
+	
+}
+abstract class D
+{
+	
+}
+abstract class C
+{
+	
+}
+
+
+
+interface Interf1
+{
+int i=10;
+
+ void hey();
+
+ default void hi()
+{
+	
+}
+}
+
+class Test1
+{
+ 
+		/*
+		 * int i=1; int j=10; do {
+		 * 
+		 * if(i++>--j) { continue; }
+		 * 
+		 * }while(i<5);
+		 * 
+		 * System.out.println(i+" "+j);
+		 */
+
+		
+		
+		public void hi() {
+			System.out.println("Hiii....");
+		}
+
+	
+}
+
+class B extends Test1
+{
+	public void hello()
+	{
+		System.out.println("Hello");
+	}
+}
+

@@ -1,0 +1,97 @@
+package com.springbootmvc.controller;
+
+ 
+ 
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.springbootmvc.model.Comment;
+import com.springbootmvc.model.Interview;
+
+ 
+@Controller
+public class MyController {
+	
+
+	/*
+	 * @RequestMapping("/hello") public ModelAndView home( ) {
+	 * 
+	 * ModelAndView mv = new ModelAndView();
+	 * 
+	 * mv.addObject("wel", "myName");
+	 * 
+	 * mv.setViewName("index");
+	 * 
+	 * System.out.println("Welcome to JSP");
+	 * 
+	 * return mv;
+	 */
+		
+		@RequestMapping("/commentform")
+		public ModelAndView home( ) {
+			
+			  ModelAndView mv = new ModelAndView("index");
+			  
+			return mv;
+
+	}
+		
+	//Step 1--
+		
+	// Below method will take the parameter from the client using @RequestParam one by one
+	// 
+		
+	
+	
+	/*
+	 * @RequestMapping("/commentSubmission") public ModelAndView
+	 * display(@RequestParam("name") String name,@RequestParam("comment") String
+	 * comment ) {
+	 * 
+	 * ModelAndView mv = new ModelAndView("commentform");
+	 * 
+	 * mv.addObject("msg","Form is Submitted by "+name+" and the comment is "
+	 * +comment);
+	 * 
+	 * return mv;
+	 * 
+	 * }
+	 */
+	 
+	 
+	// Step 2--
+		
+	// Below method will take the parameter from the client using @ModelAttribute 
+	// And Comment class object	
+	//@ModelAttribute as a method parameter.
+		
+	
+	
+	  @RequestMapping("/commentSubmission") public ModelAndView
+	  display(@ModelAttribute("msg") Comment comment, BindingResult bindingResult ) {
+	  
+		  if(bindingResult.hasErrors())
+		  {
+			  ModelAndView mv = new ModelAndView("commentform");
+			  
+			  return mv; 
+			  
+		  }
+	  ModelAndView mv = new ModelAndView("commentform");
+	  
+	  return mv; }
+	 
+	 
+		
+		
+	
+		
+		
+		
+		
+
+}

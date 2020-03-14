@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.testProgrammes.TestDoWhile&apos; to &apos;Test11&apos;&#x0D;&#x0A;- Original project: &apos;Misc Projects&apos;&#x0D;&#x0A;- Original element: &apos;com.testProgrammes.TestDoWhile&apos;&#x0D;&#x0A;- Renamed element: &apos;com.testProgrammes.Test11&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TestDoWhile&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.testProgrammes{TestDoWhile.java[TestDoWhile" matchStrategy="1" name="Test11" qualified="false" references="true" similarDeclarations="false" stamp="1577464788815" textual="false" version="1.0"/>
+</session>
